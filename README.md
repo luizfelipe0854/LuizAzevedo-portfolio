@@ -11,9 +11,9 @@ Portfólio pessoal desenvolvido com React + Vite + Tailwind CSS.
 
 ## Estrutura do Projeto
 
-- **Componentes Atômicos**: Button, IconLink
-- **Sistema de Cores Customizado**: Variáveis CSS para tema consistente
-- **Padrão Atomic Design**: Organização escalável dos componentes
+- **Componentes Atômicos**
+- **Sistema de Cores Customizado**
+- **Padrão Atomic Design**
 
 ## Como executar
 
@@ -21,3 +21,5 @@ Portfólio pessoal desenvolvido com React + Vite + Tailwind CSS.
 npm install
 npm run dev
 ```
+
+## EM DESENVOLVIMENTO...
