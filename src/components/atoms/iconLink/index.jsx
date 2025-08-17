@@ -1,9 +1,12 @@
-function IconLink({ link, children }) {
+function IconLink({ link, children, size = "text-4xl" }) {
   return (
-    <a href={link} className="flex items-center space-x-2">
-      <span className="w-auto h-auto flex items-center justify-center text-4xl">
-        {children}
-      </span>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-block ${size}`}
+    >
+      {children}
     </a>
   );
 }

@@ -1,7 +1,7 @@
 function Button({ children, onClick }) {
   return (
     <button
-      className="bg-primary text-white py-2 px-4 rounded"
+      className="bg-primary text-white py-2 px-4 rounded-lg"
       style={{ cursor: "pointer" }}
       onClick={onClick}
     >
