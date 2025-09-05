@@ -21,11 +21,17 @@ function Timeline({ data, tipo }) {
               <MdOutlineWork />
             ) : null
           }
-          className={"pt-2.5"}
-          contentStyle={{ padding: 0 }}
+          className={"pt-2.5 w-2/3"}
+          contentStyle={{
+            padding: 0,
+            boxShadow: "none",
+            borderBottom: "3px solid var(--color-border-gray)",
+            borderRight: "3px solid var(--color-border-gray)",
+          }}
           iconStyle={{
             background: "var(--color-background)",
             boxShadow: "none",
+            border: "2px solid var(--color-text-main)",
             color: "var(--color-text-main)",
           }}
         >
@@ -33,7 +39,7 @@ function Timeline({ data, tipo }) {
             {item.curso ? item.curso : item.cargo}
           </h3>
           <h4 className=" text-textSecondary">{item.instituicao}</h4>
-          <p>{item.descricao}</p>
+          {/* <p>{item.descricao}</p> */}
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
