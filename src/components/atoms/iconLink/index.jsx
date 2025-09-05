@@ -4,7 +4,7 @@ function IconLink({ link, children, size = "text-4xl" }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block ${size}`}
+      className={`inline-block ${size} text-textMain`}
     >
       {children}
     </a>
