@@ -5,18 +5,18 @@ import { FaEarthAmericas } from "react-icons/fa6";
 
 function ProjectCard({ projeto }) {
   return (
-    <div className="rounded-lg shadow-md p-4 max-w-xs">
+    <div className="group rounded-lg shadow-md p-4 max-w-xs">
       <img
         src={projeto.imagem}
         alt={projeto.nome}
-        className="w-full object-cover rounded-md mb-4"
+        className="w-full object-cover rounded-md mb-4 blur-[2px] group-hover:blur-none transition duration-300"
       />
       <h3 className="text-lg font-semibold mb-2">{projeto.nome}</h3>
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-4 min-h-[4rem] items-start">
         {projeto.tecnologias.map((tecnologia, index) => (
           <span
             key={index}
-            className="text-sm text-color p-1 bg-gray-200 rounded"
+            className="text-sm text-color p-1 bg-gray-200 rounded h-fit"
           >
             {tecnologia}
           </span>
