@@ -39,7 +39,6 @@ function Timeline({ data, tipo }) {
             {item.curso ? item.curso : item.cargo}
           </h3>
           <h4 className=" text-textSecondary">{item.instituicao}</h4>
-          {/* <p>{item.descricao}</p> */}
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
