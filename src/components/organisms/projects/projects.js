@@ -1,31 +1,36 @@
+import todoListImage from "../../../assets/todolistImage.png";
+import filmesFlixImage from "../../../assets/FilmesFlixImage.png";
+import goTasksImage from "../../../assets/GoTasksImage.png";
+
 export const projetos = [
   {
     id: 1,
-    nome: "Projeto 1",
-    descricao: "Descrição do projeto 1",
-    tecnologias: ["React", "Node.js"],
-    imagem: "https://placehold.co/600x400/EEE/31343C",
-    url: "https://github.com",
-    repositorio: "https://github.com",
+    nome: "To do List",
+    descricao:
+      "Criado para auxiliar usuários a organizarem suas tarefas diárias de forma simples e eficiente, gerindo-as no celular e computador conforme login.",
+    tecnologias: ["HTML5", "CSS3", "Javascript", "React", "Firebase"],
+    imagem: todoListImage,
+    url: "https://todolistluiz.netlify.app/",
+    repositorio: "https://github.com/luizfelipe0854/todolist",
   },
   {
     id: 2,
-    nome: "Projeto 2",
-    descricao: "Descrição do projeto 2",
-    tecnologias: ["Vue.js", "Express"],
-    imagem:
-      "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2025/08/AGIF25073101062860-aspect-ratio-512-320.jpg",
-    url: "https://github.com",
-    repositorio: "https://github.com",
+    nome: "FilmesFlix",
+    descricao:
+      "Desenvolvido para facilitar a busca rápida e exibição organizada das informações detalhadas dos filmes, de maneira simples e eficiente",
+    tecnologias: ["HTML5", "CSS3", "Javascript", "React", "Axios", "API"],
+    imagem: filmesFlixImage,
+    url: "https://filmsprojectluiz.netlify.app/",
+    repositorio: "https://github.com/luizfelipe0854/filmsproject",
   },
   {
     id: 3,
-    nome: "Projeto 3",
-    descricao: "Descrição do projeto 3",
-    tecnologias: ["Angular", "Spring"],
-    imagem:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSdbYhVwRedTbHoE50DV7ASX5a-sIe99k_Q&s",
-    url: "https://github.com",
-    repositorio: "https://github.com",
+    nome: "GoTasks",
+    descricao:
+      "Criado com o objetivo de ajudar usuários a gerenciarem tarefas de maneira prática e eficiente, antecessor do To do List.",
+    tecnologias: ["HTML5", "CSS3", "Javascript"],
+    imagem: goTasksImage,
+    url: "https://go-tasks.netlify.app/",
+    repositorio: "https://github.com/luizfelipe0854/go-tasks",
   },
 ];
