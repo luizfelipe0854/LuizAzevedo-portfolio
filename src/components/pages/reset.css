@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -36,6 +37,14 @@
   color: var(--color-text-secondary) !important;
 }
 
+.mainTitle {
+  font-family: "Inter", monospace;
+}
+
+.text-default-size {
+  font-size: 1rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -44,4 +53,5 @@ html,
 body {
   height: 100%;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
