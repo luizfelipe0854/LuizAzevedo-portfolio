@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -13,12 +24,12 @@ function Header() {
       id="header"
       className="flex justify-between items-center pb-4 pt-2 relative"
     >
-      <h1 className="text-3xl font-bold text-textMain z-50">
+      <h1 className="text-2xl font-bold text-textMain z-50">
         &lt;Luiz Azevedo/&gt;
       </h1>
 
       <button
-        className="md:hidden text-2xl text-textMain z-50"
+        className="sm:hidden text-2xl text-textMain z-50"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Menu"
       >
@@ -32,47 +43,37 @@ function Header() {
       <nav
         className={`
         ${isOpen ? "flex" : "hidden"} 
-        md:flex
-        flex-col md:flex-row
-        fixed md:relative
-        inset-0 md:inset-auto
-        bg-background-light md:bg-transparent
+        sm:flex
+        flex-col sm:flex-row
+        fixed sm:relative
+        inset-0 sm:inset-auto
         justify-center items-center
-        md:w-auto
-        p-4 md:p-0
-        md:shadow-none
+        sm:w-auto
+        p-4 sm:p-0
+        sm:shadow-none
         z-40
+        bg-background-light sm:bg-background
       `}
       >
-        <ul className="flex flex-col md:flex-row items-center gap-8 md:gap-6">
-          <li className="font-bold text-textSecondary">
-            <a href="#sobre" onClick={handleLinkClick}>
-              Sobre
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary">
-            <a href="#projetos" onClick={handleLinkClick}>
-              Projetos
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary">
-            <a href="#experiencia" onClick={handleLinkClick}>
-              Experiência
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary">
-            <a href="#formacao" onClick={handleLinkClick}>
-              Formação
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary">
+        <ul className="flex flex-col sm:flex-row items-center gap-8 sm:gap-6">
+          <li className="font-bold text-textSecondary text-default-size">
             <a href="#habilidades" onClick={handleLinkClick}>
               Habilidades
             </a>
           </li>
-          <li className="font-bold text-textSecondary">
-            <a href="#contato" onClick={handleLinkClick}>
-              Contato
+          <li className="font-bold text-textSecondary text-default-size">
+            <a href="#projetos" onClick={handleLinkClick}>
+              Projetos
+            </a>
+          </li>
+          <li className="font-bold text-textSecondary text-default-size">
+            <a href="#formacao" onClick={handleLinkClick}>
+              Formação
+            </a>
+          </li>
+          <li className="font-bold text-textSecondary text-default-size">
+            <a href="#experiencia" onClick={handleLinkClick}>
+              Experiência
             </a>
           </li>
         </ul>
