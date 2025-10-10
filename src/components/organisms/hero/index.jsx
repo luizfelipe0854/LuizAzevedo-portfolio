@@ -19,8 +19,8 @@ function Hero() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center py-12 gap-12 md:flex-row md:justify-between md:gap-8">
-      <div className="flex justify-center w-full max-w-[320px] md:w-auto md:order-last">
+    <section className="flex flex-col items-center justify-center py-12 gap-12 md:flex-row md:justify-between md:gap-8 w-full">
+      <div className="flex justify-center w-full max-w-[250px] sm:max-w-[320px] md:w-auto md:order-last">
         <img
           src={luizPhoto}
           loading="lazy"
