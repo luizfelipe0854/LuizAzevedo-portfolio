@@ -15,7 +15,7 @@ import Academic from "../organisms/academic";
 function App() {
   return (
     <div className="bg-background min-h-screen w-full flex justify-center">
-      <div className="bg-background-light w-[90%] max-w-[1200px] my-6 rounded-lg shadow-lg p-10">
+      <div className="bg-background-light w-[90%] max-w-[1200px] my-6 rounded-lg shadow-lg p-4 sm:p-10">
         <Header />
 
         <Hero />
