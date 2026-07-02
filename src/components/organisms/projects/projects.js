@@ -1,10 +1,21 @@
 import todoListImage from "../../../assets/todolistImage.png";
 import filmesFlixImage from "../../../assets/FilmesFlixImage.png";
 import goTasksImage from "../../../assets/GoTasksImage.png";
+import FinPulseImage from "../../../assets/FinPulseImage.png";
 
 export const projetos = [
-  {
+    {
     id: 1,
+    nome: "FinPulse",
+    descricao:
+      "Desenvolvido para oferecer uma visão abrangente e em tempo real das atividades financeiras, permitindo uma melhor gestão e tomada de decisão.",
+    tecnologias: [ "Vite", "React", "TypeScript", "Tailwind", "Recharts", "ExcelJS", "Toastify", "Firebase"],
+    imagem: FinPulseImage,
+    url: "https://finpulsedashboard.netlify.app/",
+    repositorio: "https://github.com/luizfelipe0854/FinPulse",
+  },  
+  {
+    id: 2,
     nome: "To do List",
     descricao:
       "Criado para auxiliar usuários a organizarem suas tarefas diárias de forma simples e eficiente, gerindo-as no celular e computador conforme login.",
@@ -14,7 +25,7 @@ export const projetos = [
     repositorio: "https://github.com/luizfelipe0854/todolist",
   },
   {
-    id: 2,
+    id: 3,
     nome: "FilmesFlix",
     descricao:
       "Desenvolvido para facilitar a busca rápida e exibição organizada das informações detalhadas dos filmes, de maneira simples e eficiente",
@@ -24,7 +35,7 @@ export const projetos = [
     repositorio: "https://github.com/luizfelipe0854/filmsproject",
   },
   {
-    id: 3,
+    id: 4,
     nome: "GoTasks",
     descricao:
       "Criado com o objetivo de ajudar usuários a gerenciarem tarefas de maneira prática e eficiente, antecessor do To do List.",
