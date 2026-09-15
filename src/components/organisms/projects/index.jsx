@@ -1,6 +1,6 @@
-import Title from "../../atoms/title";
-import ProjectCard from "../../molecules/projectCard";
-import { projetos } from "../projects/projects";
+import Title from "@/components/atoms/title";
+import ProjectCard from "@/components/molecules/projectCard";
+import { projetos } from "@/data/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";

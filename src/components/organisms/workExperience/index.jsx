@@ -1,6 +1,6 @@
-import Title from "../../atoms/title";
-import { profissional } from "../data/timelinedata";
-import Timeline from "../../molecules/timeline";
+import Title from "@/components/atoms/title";
+import { profissional } from "@/data/timelinedata";
+import Timeline from "@/components/molecules/timeline";
 
 function WorkExperience() {
   return (
