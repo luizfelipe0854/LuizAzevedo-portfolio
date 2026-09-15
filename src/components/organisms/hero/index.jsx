@@ -1,12 +1,12 @@
 import { useState } from "react";
-import luizPhoto from "../../../assets/Luiz.jpg";
-import cvFile from "../../../assets/CV-LuizAzevedo.pdf";
+import luizPhoto from "@/assets/Luiz.jpg";
+import cvFile from "@/assets/CV-LuizAzevedo.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { GoPaperclip } from "react-icons/go";
 import { TbFileCv } from "react-icons/tb";
-import IconLink from "../../atoms/iconLink";
+import IconLink from "@/components/atoms/iconLink";
 
 function Hero() {
   const [copied, setCopied] = useState(false);

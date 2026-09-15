@@ -1,5 +1,5 @@
-import Input from "../../atoms/input";
-import Button from "../../atoms/button";
+import Input from "@/components/atoms/input";
+import Button from "@/components/atoms/button";
 
 function ContactForm() {
   return (

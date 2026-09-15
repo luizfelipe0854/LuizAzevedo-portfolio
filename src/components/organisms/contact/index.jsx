@@ -1,6 +1,6 @@
-import Title from "../../atoms/title";
+import Title from "@/components/atoms/title";
 
-import ContactForm from "../../molecules/contactForm";
+import ContactForm from "@/components/molecules/contactForm";
 
 function ContactSection() {
   return (

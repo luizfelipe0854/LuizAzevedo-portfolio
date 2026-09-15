@@ -11,8 +11,8 @@ import {
   SiMysql,
 } from "react-icons/si";
 
-import Title from "../../atoms/title";
-import SkillIcon from "../../molecules/skillIcon";
+import Title from "@/components/atoms/title";
+import SkillIcon from "@/components/molecules/skillIcon";
 
 function Skills() {
   return (
