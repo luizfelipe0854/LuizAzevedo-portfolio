@@ -83,7 +83,7 @@ function ProjectDetails() {
 
       {projeto.galeria?.length > 0 && (
         <section>
-          <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-3">
+          <h2 className="text-sm font-semibold text-textMain uppercase tracking-wide mb-3">
             Galeria
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
