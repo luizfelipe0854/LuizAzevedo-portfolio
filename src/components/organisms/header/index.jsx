@@ -31,17 +31,19 @@ function Header() {
         &lt;Luiz Azevedo/&gt;
       </h1>
 
+    {!isProjectPage && (
       <button
         className="sm:hidden text-2xl text-textMain z-50"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Menu"
       >
-        {isOpen ? (
-          <FaTimes className="text-textMain" />
-        ) : (
-          <FaBars className="text-textMain" />
-        )}
+       {isOpen ? (
+         <FaTimes className="text-textMain" />
+           ) : (
+         <FaBars className="text-textMain" />
+       )}
       </button>
+    )}
 
       <nav
         className={`
