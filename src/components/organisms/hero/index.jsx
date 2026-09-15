@@ -45,7 +45,7 @@ function Hero() {
           />
         </h1>
         <h1 className="text-lg text-textSecondary mt-4">
-          Desenvolvedor Front-End
+          Desenvolvedor Frontend
         </h1>
 
         <div className="mt-6 flex flex-col  gap-4">
@@ -62,7 +62,7 @@ function Hero() {
             <IconLink link="https://wa.me/5511996183695" size="text-3xl">
               <FaWhatsapp />
             </IconLink>
-            <IconLink link={cvFile} size="text-3xl" download>
+            <IconLink link={cvFile} size="text-3xl">
               <TbFileCv />
             </IconLink>
           </div>
