@@ -1,37 +1,27 @@
-import "./reset.css";
+import "@/components/pages/reset.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import ScrollToTop from "../atoms/scrollToTop";
+import ScrollToTop from "@/components/atoms/scrollToTop";
+import ScrollRestoration from "@/components/atoms/scrollRestoration";
+import Header from "@/components/organisms/header";
+import Footer from "@/components/organisms/footer";
 
-import Header from "../organisms/header";
-import Footer from "../organisms/footer";
-import Hero from "../organisms/hero";
-
-import About from "../organisms/about";
-import ProjectsSection from "../organisms/projects";
-import Skills from "../organisms/skills";
-import WorkExperience from "../organisms/workExperience";
-import Academic from "../organisms/academic";
+import Home from "@/components/pages/Home";
+import ProjectDetails from "@/components/pages/ProjectDetails";
 
 function App() {
   return (
     <div className="bg-background min-h-screen w-full flex justify-center">
-      <div className="bg-background-light w-[90%] max-w-[1200px] my-6 rounded-lg shadow-lg p-4 sm:p-10">
-        <Header />
-
-        <Hero />
-
-        <About />
-
-        <Skills />
-
-        <ProjectsSection />
-
-        <Academic />
-
-        <WorkExperience />
-
-        <ScrollToTop />
-
+      <div className="w-[90%] max-w-[1200px] my-6 p-4 sm:p-10">
+        <BrowserRouter>
+          <ScrollRestoration />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projetos/:slug" element={<ProjectDetails />} />
+          </Routes>
+          <ScrollToTop />
+        </BrowserRouter>
         <Footer />
       </div>
     </div>

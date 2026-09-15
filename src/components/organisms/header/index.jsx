@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isProjectPage = location.pathname.startsWith("/projetos/");
 
   useEffect(() => {
     if (isOpen) {
@@ -42,7 +45,7 @@ function Header() {
 
       <nav
         className={`
-        ${isOpen ? "flex" : "hidden"} 
+        ${isOpen ? "flex" : "hidden"}
         sm:flex
         flex-col sm:flex-row
         fixed sm:relative
@@ -52,31 +55,33 @@ function Header() {
         p-4 sm:p-0
         sm:shadow-none
         z-40
-        bg-background-light sm:bg-background
+        bg-background sm:bg-background-light
       `}
       >
-        <ul className="flex flex-col sm:flex-row items-center gap-8 sm:gap-6">
-          <li className="font-bold text-textSecondary text-default-size">
-            <a href="#habilidades" onClick={handleLinkClick}>
-              Habilidades
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary text-default-size">
-            <a href="#projetos" onClick={handleLinkClick}>
-              Projetos
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary text-default-size">
-            <a href="#formacao" onClick={handleLinkClick}>
-              Formação
-            </a>
-          </li>
-          <li className="font-bold text-textSecondary text-default-size">
-            <a href="#experiencia" onClick={handleLinkClick}>
-              Experiência
-            </a>
-          </li>
-        </ul>
+        {!isProjectPage && (
+          <ul className="flex flex-col sm:flex-row items-center gap-8 sm:gap-6">
+            <li className="font-bold text-textSecondary text-default-size">
+              <a href="#projetos" onClick={handleLinkClick}>
+                Projetos
+              </a>
+            </li>
+            <li className="font-bold text-textSecondary text-default-size">
+              <a href="#habilidades" onClick={handleLinkClick}>
+                Habilidades
+              </a>
+            </li>
+            <li className="font-bold text-textSecondary text-default-size">
+              <a href="#formacao" onClick={handleLinkClick}>
+                Formação
+              </a>
+            </li>
+            <li className="font-bold text-textSecondary text-default-size">
+              <a href="#experiencia" onClick={handleLinkClick}>
+                Experiência
+              </a>
+            </li>
+          </ul>
+        )}
       </nav>
     </header>
   );
