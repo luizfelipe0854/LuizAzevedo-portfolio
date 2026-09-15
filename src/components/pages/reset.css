@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-:root {
+@theme {
   --color-primary: #8b5cf6;
   --color-primary-hover: #7c3aed;
+}
+
+:root {
   --color-background: #f9fafb;
   --color-background-light: #ffffff;
   --color-text-main: #111827;
@@ -15,26 +18,18 @@
 }
 
 .bg-background {
-  background-color: var(--color-background) !important;
+  background-color: var(--color-background);
 }
 
 .bg-background-light {
-  background-color: var(--color-background-light) !important;
-}
-
-.bg-primary {
-  background-color: var(--color-primary) !important;
-}
-
-.bg-primary:hover {
-  background-color: var(--color-primary-hover) !important;
+  background-color: var(--color-background-light);
 }
 
 .text-textMain {
-  color: var(--color-text-main) !important;
+  color: var(--color-text-main);
 }
 .text-textSecondary {
-  color: var(--color-text-secondary) !important;
+  color: var(--color-text-secondary);
 }
 
 .mainTitle {
@@ -60,6 +55,6 @@ body,
 html,
 body {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Geist", sans-serif;
   scroll-behavior: smooth;
 }
