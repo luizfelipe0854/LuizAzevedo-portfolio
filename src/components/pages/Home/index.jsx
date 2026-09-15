@@ -17,9 +17,9 @@ function Home() {
 
       <About />
 
-      <Skills />
-
       <ProjectsSection />
+      
+      <Skills />
 
       <Academic />
 
