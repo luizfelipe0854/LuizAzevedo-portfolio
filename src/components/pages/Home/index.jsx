@@ -1,10 +1,7 @@
-import ScrollToTop from "@/components/atoms/scrollToTop";
-
-import Header from "@/components/organisms/header";
-import Footer from "@/components/organisms/footer";
 import Hero from "@/components/organisms/hero";
 
 import About from "@/components/organisms/about";
+import Resume from "@/components/organisms/resume";
 import ProjectsSection from "@/components/organisms/projects";
 import Skills from "@/components/organisms/skills";
 import WorkExperience from "@/components/organisms/workExperience";
@@ -15,10 +12,12 @@ function Home() {
     <>
       <Hero />
 
+      <Resume />
+
       <About />
 
       <ProjectsSection />
-      
+
       <Skills />
 
       <Academic />
