@@ -26,7 +26,7 @@ function ProjectsSection() {
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
           }}
-          className="h-[520px]"
+          className="h-[400px]"
         >
           {projetos.map((projeto) => (
             <SwiperSlide key={projeto.id}>

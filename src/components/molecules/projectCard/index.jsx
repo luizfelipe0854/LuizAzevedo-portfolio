@@ -5,7 +5,7 @@ function ProjectCard({ projeto }) {
 
   return (
     <div
-      className="group rounded-lg shadow-md p-4 max-w-full flex flex-col justify-between h-[480px] cursor-pointer"
+      className="group rounded-lg shadow-md p-4 max-w-full flex flex-col justify-between h-[350px] cursor-pointer"
       onClick={() => navigate(`/projetos/${projeto.slug}`)}
     >
       <img
@@ -17,7 +17,7 @@ function ProjectCard({ projeto }) {
         <h3 className="text-lg font-semibold mb-2">{projeto.nome}</h3>
 
         <p className="text-gray-700 mb-2 text-default-size">
-          {projeto.descricao}
+          {projeto.descricaoCurta}
         </p>
       </div>
       <div className="flex gap-3 items-center">
